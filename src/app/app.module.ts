@@ -15,11 +15,4 @@ import { LoginComponent } from "./login/login.component";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {//
-  //constructor(router: Router) {imports: [
-   // AppRoutingModule,
-    //LoginRoutingModule,
-  //]
-    //console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
-  //}
- }
+export class AppModule {}
