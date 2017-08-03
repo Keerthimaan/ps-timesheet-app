@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { LoginComponent } from "./login/login.component";
 
 @NgModule({
+  
   declarations: [
     AppComponent
   ],
@@ -13,4 +15,11 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {//
+  //constructor(router: Router) {imports: [
+   // AppRoutingModule,
+    //LoginRoutingModule,
+  //]
+    //console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  //}
+ }
