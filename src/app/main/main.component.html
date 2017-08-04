@@ -1,0 +1,11 @@
+<body>
+ <p>{{today|date:'short'}}</p> 
+<div class="container">
+  <h2>Check in / Check out</h2>
+<h4>
+{{ whatTime | async | date:'d/M/yy hh:mm:ss' }}
+</h4>  
+<button type="button" class="btn btn-primary btn-block">CheckIn</button>
+<button type="button" class="btn btn-primary disabled">CheckOut</button>
+</div>
+</body>

@@ -1,13 +1,14 @@
 <div id="signupform">
-  <form method="get">
+  <form method="POST">
     USERNAME<br>
-    <input class="input" type="text" name="username"><br><br>
+    <input class="input" type="text" name="uname"><br><br>
     EMAIL ID<br>
     <input class="input" type="email" name="emailid"><br><br>
     PASSWORD<br>
-    <input class="input" type="password" name="password"><br><br><br>
+    <input class="input" type="password" name="pwd"><br><br><br>
 
-    <a routerLink="/home" routerLinkActive="Active"><input class="button" type="submit" value="SIGN UP"></a>
-    <input class="button" type="reset" value="RESET">    
+<button type="button" class="btn btn-primary-outline pull-right" (click)="btnClick();"><i class="fa fa-plus"></i> Register</button>     
+<input type="submit" class="btn btn-primary-outline pull-right" (click)="submitPost()" value="add register"/>    
+<input class="button" type="reset" value="RESET">    
   </form>
 </div>
